@@ -7,7 +7,7 @@
     </head>
     <body>
                                     
-        <a href="https://github.com/login/oauth/authorize?client_id=a36d2aaa108e16bb3604" style="margin: 2em"class="button is-link is-outlined ">Logga in</a>
+        <a href="https://github.com/login/oauth/authorize?client_id=c3c2a295d93c6573e753" style="margin: 2em"class="button is-link is-outlined ">Logga in</a>
 
 
 
@@ -17,22 +17,7 @@
             document.body.onload = init;
 
             function init(){
-                if(localStorage.getItem("token")){
-                    var url = "http://localhost:8080/OAuth/api/login?token="
-                            + localStorage.getItem("token");
-                    $.get(url,(data) => {
-                        console.log(data);
-                        alert("Welcome " + data.login + ", your id is " + data.id);
-                    })
-                }
-                if($.url().param("code") !== undefined){
-                    var url = "http://localhost:8080/OAuth/api/token?code="
-                            + $.url().param("code");
-                    $.get(url,function (data){
-                        localStorage.setItem("token",data);
-                    })
-                }
-            }
+                
         </script>
     </body>
 </html>

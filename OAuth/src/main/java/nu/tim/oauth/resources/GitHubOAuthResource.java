@@ -35,4 +35,5 @@ public class GitHubOAuthResource {
         return Response.ok(gitHubOAuthBean.githubAuth(token)).build();
     }
     
+    
 }
