@@ -1,0 +1,4 @@
+nu\tim\oauth\JAXRSConfiguration.class
+nu\tim\oauth\resources\GitHubOAuthResource.class
+nu\tim\oauth\beans\GitHubOAuthBean.class
+nu\tim\oauth\resources\JavaEE8Resource.class
